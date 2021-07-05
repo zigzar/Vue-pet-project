@@ -1,28 +1,28 @@
 <template>
-    <div>
-        
-    </div>
+    <navbar></navbar>
+  <div class="app">
+      <router-view></router-view>
+  </div>
 </template>
 
 <script>
+import Navbar from '@/components/UI/Navbar'
 export default {
-    data() {
-        return {
-            likes: 0,
-            dislikes: 0,
-        }
-    },
-    methods: {
-        addLike() {
-            this.likes++;
-        },
-        addDislike() {
-            this.dislikes++;
-        }
+    components: {
+        Navbar
     }
 }
 </script>
 
-<style lang="scss">
-
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .app {
+        margin: 0 auto;
+        padding: 15px;
+        max-width: 1200px;
+    }
 </style>

@@ -1,19 +1,18 @@
-# vue
+# Vue pet project
 
-## Project setup
+CRUD приложение с возможностью добавления постов, поиска и сортировки по нескольким параметрам. Есть бесконечная прокрутка с динамической подгрузкой постов с placeholder api.
+
+## Установка зависимостей проекта
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Разработка: компиляция и отслеживание изменений
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Продакшн: компиляция и минификация
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

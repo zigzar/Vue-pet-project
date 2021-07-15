@@ -3,7 +3,7 @@
             class="post"
         >
             <div class="post__content">
-                <div><strong>{{post.id}}</strong> likes = {{$store.state.likes}}</div>
+                <div><strong>{{post.id}}</strong></div>
                 <div><strong>Название:</strong> {{post.title}}</div>
                 <div><strong>Описание:</strong> {{post.body}}</div>
             </div>
@@ -38,8 +38,9 @@ export default {
     }
     .post__btns {
         display: flex;
+        flex-direction: column;
     }
-    .btn:first-child {
-        margin-right: 15px;
+    .btn {
+        margin: .5em;
     }
 </style>
